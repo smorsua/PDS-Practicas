@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/17.1
+vdds_test
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1738955236
+!i10b 1
+!s100 XV_^nG1o;mLNFf9]iK<Vl2
+IRKP?BXk7H5<CRjQGHLTOb2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s105 dds_test_sv_unit
+S1
+Z4 dC:/Users/vicruies/Desktop/Practica1/P1/sim
+Z5 w1738955226
+Z6 8C:/Users/vicruies/Desktop/Practica1/P1/src/dds_test.sv
+Z7 FC:/Users/vicruies/Desktop/Practica1/P1/src/dds_test.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1738955236.000000
+Z10 !s107 C:/Users/vicruies/Desktop/Practica1/P1/src/dds_test.sv|
+Z11 !s90 -reportprogress|300|-work|work|-sv|C:/Users/vicruies/Desktop/Practica1/P1/src/dds_test.sv|
+!i113 1
+Z12 o-work work -sv
+Z13 tCvgOpt 0
+vdds_test_rom
+R0
+R1
+!i10b 1
+!s100 5TUjKHNncYJHcX0^G6@I71
+IBl];f9f`ji7Rin]jVmAgD2
+R2
+R3
+S1
+R4
+R5
+R6
+R7
+L0 54
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vdds_test_tsb
+R0
+Z14 DXx4 work 16 dds_test_tsb_pkg 0 22 8Z@:^OI2=af9IClS1K9P`3
+DXx4 work 20 dds_test_tsb_sv_unit 0 22 WhdJ_4Yz1EdzcE;8Xm=Ab3
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 069jN;R`cSK8A@PCnRamR2
+Id8LUkJ0W>Z>?h7Jc`?jfG0
+!s105 dds_test_tsb_sv_unit
+S1
+R4
+Z15 w1738948371
+Z16 8C:/Users/vicruies/Desktop/Practica1/P1/tsb/dds_test_tsb.sv
+Z17 FC:/Users/vicruies/Desktop/Practica1/P1/tsb/dds_test_tsb.sv
+L0 4
+R8
+R9
+Z18 !s107 C:/Users/vicruies/Desktop/Practica1/P1/tsb/dds_test_tsb.sv|
+Z19 !s90 -reportprogress|300|-work|work|-sv|C:/Users/vicruies/Desktop/Practica1/P1/tsb/dds_test_tsb.sv|
+!i113 1
+R12
+R13
+Xdds_test_tsb_pkg
+R0
+!s110 1738953821
+!i10b 1
+!s100 ^3k5GTI^LG^YnemRgEWfZ1
+I8Z@:^OI2=af9IClS1K9P`3
+V8Z@:^OI2=af9IClS1K9P`3
+S1
+R4
+w1738951570
+8C:/Users/vicruies/Desktop/Practica1/P1/tsb/dds_test_tsb_pkg.sv
+FC:/Users/vicruies/Desktop/Practica1/P1/tsb/dds_test_tsb_pkg.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1738953821.000000
+!s107 C:/Users/vicruies/Desktop/Practica1/P1/tsb/dds_test_tsb_pkg.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/vicruies/Desktop/Practica1/P1/tsb/dds_test_tsb_pkg.sv|
+!i113 1
+R12
+R13
+Xdds_test_tsb_sv_unit
+R0
+R14
+VWhdJ_4Yz1EdzcE;8Xm=Ab3
+r1
+!s85 0
+31
+!i10b 1
+!s100 I9lg;^RRUZGdZVEcb@lz33
+IWhdJ_4Yz1EdzcE;8Xm=Ab3
+!i103 1
+S1
+R4
+R15
+R16
+R17
+L0 2
+R8
+R9
+R18
+R19
+!i113 1
+R12
+R13
