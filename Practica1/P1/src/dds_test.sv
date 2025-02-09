@@ -21,7 +21,7 @@ logic [L-1:0] b1_accum_trunc; // b0_ac_r trucado a L bits
 logic [L-3:0] b1_preproc_rom_addr;
 logic [W-1:0] b2_rom_data;
 logic [W-1:0] b3_posproc_data;
-
+logic [1:0] b4_delayed_val_data;
 /* DESCRIPCION ------------------------- */		
 
 // b0 accumulator
@@ -63,9 +63,17 @@ always_comb begin
     end
 end
 
+// b4 val_data delay
+always_ff @(posedge clk) begin
+    if(ic_rst_ac)
+        b4_delayed_val_data <= 2'b00;
+    else if(ic_en_ac)
+        b4_delayed_val_data <= {b4_delayed_val_data[0], ic_val_data};
+end
+
 /* ASIGNACION SALIDAS ------------------------- */
 
-assign oc_val_data = ic_val_data;
+assign oc_val_data = b4_delayed_val_data[1];
 assign od_sqr_wave = b0_accum_r[M-1] == 0 ? (1 << (W - 1)) - 1 : (1 << (W - 1));
 assign od_ramp_wave = b0_accum_r[M-1:M-W];
 assign od_sin_wave = b3_posproc_data;
