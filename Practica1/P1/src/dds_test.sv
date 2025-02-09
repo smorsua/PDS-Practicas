@@ -16,36 +16,59 @@ output oc_val_data
 
 /* DECLARACIONES ------------------------- */
 
-logic [M-1:0] b0_ac_r;
-logic [L-3:0] b1_ac_t; // b0_ac_r trucado a L bits
-logic [1:0] b1_preproc_ctrl;
-logic [L-3:0] b1_ac_preproc;
+logic [M-1:0] b0_accum_r;
+logic [L-1:0] b1_accum_trunc; // b0_ac_r trucado a L bits
+logic [L-3:0] b1_preproc_rom_addr;
+logic [W-1:0] b2_rom_data;
+logic [W-1:0] b3_posproc_data;
 
 /* DESCRIPCION ------------------------- */		
 
 // b0 accumulator
 always_ff @(posedge clk) begin
 	if(ic_rst_ac)
-		b0_ac_r <= 0;
+		b0_accum_r <= 0;
 	else if(ic_en_ac)
-		b0_ac_r <= b0_ac_r + id_p_ac;
+		b0_accum_r <= b0_accum_r + id_p_ac;
 
 end
 
 // b1 preprocessor
-assign b1_preproc_ctrl = b0_ac_r[M-1:M-2];
-assign b1_ac_t = b0_ac_r[L-3:0];
+assign b1_accum_trunc = b0_accum_r[M-1:M-L];
+
 always_comb begin
-	if(b1_preproc_ctrl[0] == 0) begin
-		b1_ac_preproc = b1_ac_t;
-	end else if(b1_ac_t[0] == 1) begin
-		b1_ac_preproc = -b1_ac_t;
+	if(b1_accum_trunc[L-2] == 0) begin
+		b1_preproc_rom_addr = b1_accum_trunc[L-3:0];
+	end else begin
+		b1_preproc_rom_addr = ~b1_accum_trunc[L-3:0];
 	end
+end
+
+// b2 ROM with sine wave samples
+dds_test_rom #(
+    .ADDR_WIDTH(L-2),
+    .DATA_WIDTH(W)
+) sine_wave_rom (
+    .clk(clk),
+    .ic_addr(b1_preproc_rom_addr),
+    .od_rom(b2_rom_data)
+);
+
+// b3 postprocessor
+always_comb begin
+    if(b1_accum_trunc[L-1] == 0) begin
+        b3_posproc_data <= b2_rom_data;
+    end else begin
+        b3_posproc_data <= ~b2_rom_data;
+    end
 end
 
 /* ASIGNACION SALIDAS ------------------------- */
 
 assign oc_val_data = ic_val_data;
+assign od_sqr_wave = b0_accum_r[M-1] == 0 ? (1 << (W - 1)) - 1 : (1 << (W - 1));
+assign od_ramp_wave = b0_accum_r[M-1:M-W];
+assign od_sin_wave = b3_posproc_data;
 
 endmodule 
 
