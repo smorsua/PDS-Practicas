@@ -120,7 +120,7 @@ always@(posedge clk)
 always@(sin_wave_F,sin_wave_M,ramp_wave_F,ramp_wave_M,sqr_wave_F,sqr_wave_M)
 	Assert_error_out:
 		assert (sin_wave_F==sin_wave_M && ramp_wave_F==ramp_wave_M && sqr_wave_F==sqr_wave_M)
-			//$display("OK ","%d", sample_cnt);
+			//$display("OK ","%d", sample_cnt);			
 			else begin
 				error_cnt = error_cnt + 1;
 				$display("Error in sample number ","%d", sample_cnt);
