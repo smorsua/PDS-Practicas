@@ -1,7 +1,7 @@
 package dds_test_tsb_pkg; 
  
-integer test_case = 102; // #case for test 
-integer in_sample_num = 501; // #processed input samples 
+integer test_case = 101; // #case for test 
+integer in_sample_num = 981; // #processed input samples 
  
 parameter M = 16; // DDS accumulator wordlength
 parameter L = 6; // DDS phase truncation wordlength
