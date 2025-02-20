@@ -25,7 +25,6 @@ logic b3_delayed_control;
 logic [1:0] b4_delayed_val_data;
 logic [W-1:0] b4_sqr_wave;
 logic [W-1:0] b4_ramp_wave;
-
 /* DESCRIPCION ------------------------- */		
 
 // b0 accumulator

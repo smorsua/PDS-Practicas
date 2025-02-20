@@ -20,7 +20,7 @@ logic signed [13:0] sin_wave_s,sin_wave_r;
 logic val_out_s,val_out_r;
 
 // Seleccion de registros de I/O: 0-->no, 1-->si 
-parameter reg_io = 1;
+parameter reg_io = 0;
 
 // No registra I/O
 generate if (reg_io == 0)
