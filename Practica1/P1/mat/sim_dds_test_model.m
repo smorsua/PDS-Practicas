@@ -21,7 +21,7 @@ file_dir = '../sim/iof/';
 tsb_dir = '../tsb/'; 
 
 %% TEST CASES:
-test_case = 101;
+test_case = 102;
 
 % List of test cases
 % 1 : fo=1.1 MHz,   M = 27, L=15, W=14 
@@ -35,6 +35,9 @@ test_case = 101;
 % 101 : fo=0.1 MHz, M = 16, L=6, W=16 Debug case 1
 % 102 : fo=1 MHz, M = 16, L=6, W=16 Debug case 2
 
+% DDS clock frequency (MHz) 
+%%%%% DO NOT CHANGE 
+fclk = 96; % MHz
 
 switch test_case
     case 1 
@@ -67,17 +70,35 @@ switch test_case
 
    case 102 % Debug case 2
         fo=1; % DDS generated frequency MHz
-        M=16; % Accumulator length in bits
-        L=6; % Accumulator truncated phase in bits (L <= M)
+%         M=16; % Accumulator length in bits
+%         L=6; % Accumulator truncated phase in bits (L <= M)
+%         W=16; % Sine LUT word-length in bits
+
+        M=24; % Accumulator length in bits
+        L=15; % Accumulator truncated phase in bits (L <= M)
         W=16; % Sine LUT word-length in bits
+
+    case 103
+        M=27; % Accumulator length in bits
+        fo=fclk/(2^M); % DDS generated frequency MHz
+        L=15; % Accumulator truncated phase in bits (L <= M)
+        W=14; % Sine LUT word-length in bits        
+    
+    case 104
+        M=27; % Accumulator length in bits
+        fo=fclk/2; % DDS generated frequency MHz
+        L=15; % Accumulator truncated phase in bits (L <= M)
+        W=16; % Sine LUT word-length in bits
+                
+    case 105
+        M=27; % Accumulator length in bits
+        fo=20; % DDS generated frequency MHz
+        L=15; % Accumulator truncated phase in bits (L <= M)
+        W=16; % Sine LUT word-length in bits
+
     otherwise
         error ('--> This test case is not defined <--') 
 end
-
-
-% DDS clock frequency (MHz) 
-%%%%% DO NOT CHANGE 
-fclk = 96; % MHz
 
 % Accumulator step Pesc 
 %%%%% TO COMPLETE BY THE STUDENT
@@ -153,9 +174,11 @@ if file_test_gen == 1
     num_data = length(sin_wave);
     pack_f=fopen(f,'w');
     for i=1:length(sin_wave)
-       fprintf(pack_f,[num2bin(q_out,sin_wave(i)) ' '...
-                       num2bin(q_out,ramp_wave(i)) ' '...
-                       num2bin(q_out,sqr_wave(i))  '\n']);
+%        fprintf(pack_f,[num2bin(q_out,sin_wave(i)) ' '...
+%                        num2bin(q_out,ramp_wave(i)) ' '...
+%                        num2bin(q_out,sqr_wave(i))  '\n']);
+
+ fprintf(pack_f,[num2bin(q_out,sin_wave(i)) '\n']);
     end
     fclose(pack_f);
 

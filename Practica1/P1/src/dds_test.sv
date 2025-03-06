@@ -16,15 +16,15 @@ output oc_val_data
 
 /* DECLARACIONES ------------------------- */
 
-logic [M-1:0] b0_accum_r;
-logic [L-1:0] b1_accum_trunc; // b0_ac_r trucado a L bits
-logic [L-3:0] b1_preproc_rom_addr;
-logic [W-1:0] b2_rom_data;
-logic [W-1:0] b3_posproc_data;
-logic b3_delayed_control;
-logic [1:0] b4_delayed_val_data;
-logic [W-1:0] b4_sqr_wave;
-logic [W-1:0] b4_ramp_wave;
+logic [M-1:0] b0_accum_r;               // U[W,0]
+logic [L-1:0] b1_accum_trunc_s;         // U[L,0]
+logic [L-3:0] b1_preproc_rom_addr_s;    // U[L-3,0]
+logic [W-1:0] b2_rom_data_s;            // S[W,W-1]
+logic [W-1:0] b3_posproc_data_s;        // S[W,W-1]
+logic b3_delayed_control_r;
+logic [1:0] b4_delayed_val_data_r;
+logic [W-1:0] b4_sqr_wave_r;            // S[W,W-1]
+logic [W-1:0] b4_ramp_wave_r;           // S[W,W-1]
 
 /* DESCRIPCION ------------------------- */		
 
@@ -38,13 +38,13 @@ always_ff @(posedge clk) begin
 end
 
 // b1 preprocessor
-assign b1_accum_trunc = b0_accum_r[M-1:M-L];
+assign b1_accum_trunc_s = b0_accum_r[M-1:M-L];
 
 always_comb begin
-	if(b1_accum_trunc[L-2] == 0) begin
-		b1_preproc_rom_addr = b1_accum_trunc[L-3:0];
+	if(b1_accum_trunc_s[L-2] == 0) begin
+		b1_preproc_rom_addr_s = b1_accum_trunc_s[L-3:0];
 	end else begin
-		b1_preproc_rom_addr = ~b1_accum_trunc[L-3:0];
+		b1_preproc_rom_addr_s = ~b1_accum_trunc_s[L-3:0];
 	end
 end
 
@@ -54,47 +54,47 @@ dds_test_rom #(
     .DATA_WIDTH(W)
 ) sine_wave_rom (
     .clk(clk),
-    .ic_addr(b1_preproc_rom_addr),
-    .od_rom(b2_rom_data)
+    .ic_addr(b1_preproc_rom_addr_s),
+    .od_rom(b2_rom_data_s)
 );
 
 // b3 postprocessor
 always_ff @(posedge clk) begin
 	if(ic_rst_ac) begin
-		b3_delayed_control <= 0;
+		b3_delayed_control_r <= 0;
 	end else begin
-		b3_delayed_control <= b1_accum_trunc[L-1];
+		b3_delayed_control_r <= b1_accum_trunc_s[L-1];
 	end
 end
 
 always_comb begin
-    if(b3_delayed_control == 0) begin
-        b3_posproc_data = b2_rom_data;
+    if(b3_delayed_control_r == 0) begin
+        b3_posproc_data_s = b2_rom_data_s;
     end else begin
-        b3_posproc_data = -b2_rom_data;
+        b3_posproc_data_s = -b2_rom_data_s;
     end
 end
 
 // b4 Align outputs with sine wave data delay
 always_ff @(posedge clk) begin
     if(ic_rst_ac) begin
-		b4_ramp_wave <= 0;
-		b4_sqr_wave <= 0;
-		b4_delayed_val_data <= 0;
+		b4_ramp_wave_r <= 0;
+		b4_sqr_wave_r <= 0;
+		b4_delayed_val_data_r <= 0;
 	end else if(ic_en_ac) begin
-		b4_ramp_wave <= b0_accum_r[M-1:M-W];
-		b4_sqr_wave <= b0_accum_r[M-1] == 0 ? (1 << (W - 1)) - 1 : (1 << (W - 1)) + 1;
-		b4_delayed_val_data <= {b4_delayed_val_data[0], ic_val_data};
+		b4_ramp_wave_r <= b0_accum_r[M-1:M-W];
+		b4_sqr_wave_r <= b0_accum_r[M-1] == 0 ? (1 << (W - 1)) - 1 : (1 << (W - 1)) + 1;
+		b4_delayed_val_data_r <= {b4_delayed_val_data_r[0], ic_val_data};
 	end
 end
 
 
 /* ASIGNACION SALIDAS ------------------------- */
 
-assign oc_val_data = b4_delayed_val_data[1];
-assign od_sqr_wave = b4_sqr_wave;
-assign od_ramp_wave = b4_ramp_wave;
-assign od_sin_wave = b3_posproc_data;
+assign oc_val_data = b4_delayed_val_data_r[1];
+assign od_sqr_wave = b4_sqr_wave_r;
+assign od_ramp_wave = b4_ramp_wave_r;
+assign od_sin_wave = b3_posproc_data_s;
 
 endmodule 
 

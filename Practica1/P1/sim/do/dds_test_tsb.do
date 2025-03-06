@@ -14,14 +14,14 @@ add wave -noupdate /dds_test_tsb/val_out
 add wave -noupdate -radix decimal /dds_test_tsb/sin_wave
 add wave -noupdate -radix decimal /dds_test_tsb/ramp_wave
 add wave -noupdate -radix decimal /dds_test_tsb/sqr_wave
-add wave -noupdate -divider {Comparación _M con _F}
+add wave -noupdate -divider {Comparacion _M con _F}
 add wave -noupdate -color Orange -format Analog-Step -height 74 -max 8191.0 -min -8191.0 -radix decimal /dds_test_tsb/sin_wave_M
 add wave -noupdate -color Cyan -format Analog-Step -height 74 -max 8191.0 -min -8191.0 -radix decimal /dds_test_tsb/sin_wave_F
 add wave -noupdate -color Orange -format Analog-Step -height 74 -max 8191.0000000000018 -min -8029.0 -radix decimal /dds_test_tsb/ramp_wave_M
 add wave -noupdate -color Cyan -format Analog-Step -height 74 -max 8191.0000000000018 -min -8029.0 -radix decimal /dds_test_tsb/ramp_wave_F
 add wave -noupdate -color Orange -format Analog-Step -height 74 -max 8191.0 -min -8191.0 -radix decimal /dds_test_tsb/sqr_wave_M
 add wave -noupdate -color Cyan -format Analog-Step -height 74 -max 8191.0 -min -8191.0 -radix decimal /dds_test_tsb/sqr_wave_F
-add wave -noupdate -divider {Monitorización de errores}
+add wave -noupdate -divider {Monitorizacion de errores}
 add wave -noupdate -color Violet /dds_test_tsb/error_cnt
 add wave -noupdate -color Coral /dds_test_tsb/sample_cnt
 add wave -noupdate /dds_test_tsb/end_sim
