@@ -1,9 +1,9 @@
-W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb_pkg.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb_pkg.sv
+W:/MASTER_1/PDS-Practicas/Practica2/P2/src/dp_mod.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica2/P2/src/dp_mod.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling package dp_mod_tsb_pkg
+-- Compiling module dp_mod
 
 Top level modules:
-	--none--
+	dp_mod
 
 } {} {}} W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

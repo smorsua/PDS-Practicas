@@ -176,10 +176,6 @@ if file_test_gen == 1
     end
     fprintf(pack_f,[num2bin(q_in,s_in(i+1))]);
 
-%     s_in_bin = num2bin(q_in,s_in);
-%     fprintf(pack_f, "%s\n", s_in_bin);
-%     writematrix(s_in_bin, '../sim/iof/id_dp_mod.txt', 'FileType', 'text', 'WriteMode', 'overwrite');
-
     fclose(pack_f);
 
     % Output data file 'od_dp_mod.txt'
@@ -201,8 +197,6 @@ if file_test_gen == 1
     end
     fprintf(pack_f,[num2bin(q_out,data_out(i+1))]);	
 
-%     data_out_bin = num2bin(q_out,data_out);
-%     writematrix(data_out_bin, '../sim/iof/od_dp_mod.txt', 'FileType', 'text', 'WriteMode', 'overwrite');
     fclose(pack_f);
 
     % Package with parameters

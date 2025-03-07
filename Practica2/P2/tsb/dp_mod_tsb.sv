@@ -17,24 +17,25 @@ logic [15:0] im_am;
 logic [15:0] im_fm;
 logic val_out;
 logic signed [15:0] in_data;
-logic signed [W-1:0] out_data;
+logic signed [15:0] out_data;
 
-logic signed [W-1:0] wave_M, wave_F;
+logic signed [15:0] wave_M, wave_F;
 
 // contadores y control
 integer in_sample_cnt; // Contador de muestras de entrada
-logic end_sim; // Indicación de simulación on/off
-logic load_data;  // Inicio de lectura de datos
-			// COMPLETAR --------------------------------
 integer out_sample_cnt; // Contador de muestras de salida
 integer error_cnt; // Contador de errores
+
+logic load_data;  // Inicio de lectura de datos
+logic end_sim; // Indicación de simulación on/off
 
 // Gestion I/O texto
 integer data_in_file_val;
 logic signed [15:0] data_in_file;
 integer scan_data_in;
-			// COMPLETAR --------------------------------
+
 integer config_file_val;
+
 integer data_out_file_val;
 logic signed [15:0] data_out_file;
 integer scan_data_out;
@@ -74,8 +75,6 @@ initial
 			$stop;
 		end
 		
-		// MODIFICAR PARA QUE SE LEAN ESTOS VALORES DESDE 
-		// EL FICHERO id_config_dp_mod.txt
 		config_file_val = $fopen("./iof/id_config_dp_mod.txt", "r");
 
 		$fscanf(config_file_val, "%d\n", p_frec_por);
@@ -85,8 +84,6 @@ initial
 
 		$fclose(config_file_val);
 		//---------------------------------------------------
-		
-		// COMPLETAR CON LAS VARIABLES QUE FALTE POR INICIALIZAR
 
 		in_data = 0;
 		error_cnt = 0;
