@@ -39,29 +39,14 @@ logic [6:0] b4_delayed_val_data;
 /* DESCRIPCION ------------------------- */	
 
 // b0: ruta datos FM
-
-// smoreno Input multiplicand mux
-// always_ff @(posedge clk) begin
-// 	if(ic_rst) begin
-// 		b0_multiplicand_mux_r <= 17'd0;
-// 	end else begin
-// 		if(ic_fm_am) begin
-// 			b0_multiplicand_mux_r <= $signed({1'b0, id_im_fm});
-// 		end else begin
-// 			b0_multiplicand_mux_r <= 17'd0;
-// 		end
-// 	end
-// end
-
-always_comb begin
+always_ff @(posedge clk) begin
 	if(ic_fm_am) begin
-		b0_multiplicand_mux_r = $signed({1'b0, id_im_fm});
+		b0_multiplicand_mux_r <= $signed({1'b0, id_im_fm});
 	end else begin
-		b0_multiplicand_mux_r = 17'd0;
+		b0_multiplicand_mux_r <= 17'd0;
 	end
 end
 
-// smoreno Input multiplier
 always_ff @(posedge clk) begin
 	if(ic_rst) begin
 		b0_mult_res_r <= 0;

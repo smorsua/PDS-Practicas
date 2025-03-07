@@ -5,14 +5,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	--none--
 
-} {} {}} W:/MASTER_1/PDS-Practicas/Practica2/P2/src/dds_mod_dds.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica2/P2/src/dds_mod_dds.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module dds_mod_dds
--- Compiling module dds_mod_dds_rom
-
-Top level modules:
-	dds_mod_dds
-
 } {} {}} W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling package dp_mod_tsb_sv_unit
@@ -21,5 +13,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	dp_mod_tsb
+
+} {} {}} W:/MASTER_1/PDS-Practicas/Practica2/P2/src/dds_mod_dds.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica2/P2/src/dds_mod_dds.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module dds_mod_dds
+-- Compiling module dds_mod_dds_rom
+
+Top level modules:
+	dds_mod_dds
 
 } {} {}}

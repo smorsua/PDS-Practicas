@@ -62,13 +62,14 @@ initial
 		$display("START TEST # ","%d", test_case);
 		$display("########################################### ");
 		data_in_file_val = $fopen("./iof/id_dp_mod.txt", "r");
-		assert (!data_in_file_val) begin
+
+		assert (data_in_file_val) else begin
 			$display("---> Error opening file id_dp_mod.txt");
 			$stop;
 		end
 
 		data_out_file_val = $fopen("./iof/od_dp_mod.txt", "r");
-		assert (!data_out_file_val) begin
+		assert (data_out_file_val) else begin
 			$display("---> Error opening file od_dp_mod.txt");
 			$stop;
 		end
