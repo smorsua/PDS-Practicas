@@ -10,7 +10,7 @@ cModel Technology
 dW:/MASTER_1/PDS-Practicas/Practica2/P2/tsb_dds_test
 vdds_mod_dds
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1741341395
+Z1 !s110 1741343032
 !i10b 1
 !s100 ^4m?J6gVcl;?L`6@J1JER1
 INKc6R@[Mk;U`fG5YCLOE52
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1741341395.000000
+Z9 !s108 1741343032.000000
 Z10 !s107 W:/MASTER_1/PDS-Practicas/Practica2/P2/src/dds_mod_dds.sv|
 Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica2/P2/src/dds_mod_dds.sv|
 !i113 1
@@ -58,7 +58,7 @@ R12
 R13
 vdp_mod
 R0
-Z14 !s110 1741341396
+R1
 !i10b 1
 !s100 PXN[UPTKN23TU7NY0c`9g1
 IcIm841OMK7`Z=X0GGJh4I3
@@ -74,7 +74,7 @@ R8
 r1
 !s85 0
 31
-Z15 !s108 1741341396.000000
+R9
 !s107 W:/MASTER_1/PDS-Practicas/Practica2/P2/src/dp_mod.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica2/P2/src/dp_mod.sv|
 !i113 1
@@ -82,7 +82,7 @@ R12
 R13
 vdp_mod_tsb
 R0
-Z16 DXx4 work 14 dp_mod_tsb_pkg 0 22 5Q8d>be2I`R^k1SK_KTRj1
+Z14 DXx4 work 14 dp_mod_tsb_pkg 0 22 5Q8d>be2I`R^k1SK_KTRj1
 DXx4 work 18 dp_mod_tsb_sv_unit 0 22 ATQ0zjH1Zod;e^HMmlK842
 R2
 r1
@@ -94,27 +94,27 @@ IT?R^X5gdWjcaPacBI]iz21
 !s105 dp_mod_tsb_sv_unit
 S1
 R4
-Z17 w1741340617
-Z18 8W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv
-Z19 FW:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv
+Z15 w1741340617
+Z16 8W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv
+Z17 FW:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv
 L0 4
 R8
-R15
-Z20 !s107 W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv|
-Z21 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv|
+Z18 !s108 1741343033.000000
+Z19 !s107 W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv|
+Z20 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb.sv|
 !i113 1
 R12
 R13
 Xdp_mod_tsb_pkg
 R0
-R14
+!s110 1741343033
 !i10b 1
 !s100 :KG2EGZ`G83F[Hgd`Rh^k1
 I5Q8d>be2I`R^k1SK_KTRj1
 V5Q8d>be2I`R^k1SK_KTRj1
 S1
 R4
-w1741341372
+w1741342873
 8W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb_pkg.sv
 FW:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb_pkg.sv
 L0 1
@@ -122,7 +122,7 @@ R8
 r1
 !s85 0
 31
-R15
+R9
 !s107 W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb_pkg.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica2/P2/tsb/dp_mod_tsb_pkg.sv|
 !i113 1
@@ -130,7 +130,7 @@ R12
 R13
 Xdp_mod_tsb_sv_unit
 R0
-R16
+R14
 VATQ0zjH1Zod;e^HMmlK842
 r1
 !s85 0
@@ -141,14 +141,14 @@ IATQ0zjH1Zod;e^HMmlK842
 !i103 1
 S1
 R4
+R15
+R16
 R17
-R18
-R19
 L0 2
 R8
-R15
+R18
+R19
 R20
-R21
 !i113 1
 R12
 R13

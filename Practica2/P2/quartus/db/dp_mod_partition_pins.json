@@ -1,0 +1,381 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "od_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "oc_val_data",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "ic_rst",
+					"strict" : false
+				},
+				{
+					"name" : "ic_fm_am",
+					"strict" : false
+				},
+				{
+					"name" : "ic_val_data",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[23]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[22]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[21]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[20]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[19]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[18]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[17]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[16]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[15]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[14]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[13]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[12]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[11]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[10]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[9]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[8]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[7]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[6]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[5]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[4]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[3]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[2]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[1]",
+					"strict" : false
+				},
+				{
+					"name" : "id_frec_por[0]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[0]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[1]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[2]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[3]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[4]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[5]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[6]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[7]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[8]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[9]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[10]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[11]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[12]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[13]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[14]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_am[15]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[0]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[1]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[2]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[3]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[4]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[5]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[6]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[7]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[8]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[9]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[10]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[11]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[12]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[13]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[14]",
+					"strict" : false
+				},
+				{
+					"name" : "id_im_fm[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

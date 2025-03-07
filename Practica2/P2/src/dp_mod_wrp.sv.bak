@@ -1,4 +1,4 @@
-module dp_mod_wrp
+module dp_mod
 	(
 	input signed [15:0] id_data,	// S[16,15] 
 	input [23:0] id_frec_por,		// U[24,24]
@@ -12,17 +12,17 @@ module dp_mod_wrp
 	output oc_val_data
 	);
 
-logic signed [15:0] id_data_r;	// S[16,15] 
-logic [23:0] id_frec_por_r;		// U[24,24]
-logic [15:0] id_im_am_r;		// U[16,15]
-logic [15:0] id_im_fm_r;		// U[16,16]
-logic ic_fm_am_r; 				// Control modo fm/am
-logic ic_rst_r;					// rst sincrono activo a 1
-logic ic_val_data_r;				
-logic clk_r;
-logic signed [15:0] od_data_r;
-logic signed [15:0] od_data_s;	// S[16,15]
-logic oc_val_data_r;	
+logic signed [15:0] id_data_r,	// S[16,15] 
+logic [23:0] id_frec_por_r,		// U[24,24]
+logic [15:0] id_im_am_r,		// U[16,15]
+logic [15:0] id_im_fm_r,		// U[16,16]
+logic ic_fm_am_r, 				// Control modo fm/am
+logic ic_rst_r,					// rst sincrono activo a 1
+logic ic_val_data_r,				
+logic clk_r,
+logic signed [15:0] od_data_r,
+logic signed [15:0] od_data_s,	// S[16,15]
+logic oc_val_data_r,	
 logic val_out_s,val_out_r;
 	
 // Seleccion de registros de I/O: 0-->no, 1-->si 
@@ -71,7 +71,7 @@ dp_mod DP1 (
 		.oc_val_data(val_out_s)
 	);
 
-assign od_data	   = od_data_r;
+assing od_data	   = od_data_r;
 assign oc_val_data = val_out_r;
 
 endmodule 
