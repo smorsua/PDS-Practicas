@@ -14,12 +14,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	cic_tsb
 
-} {} {}} W:/MASTER_1/PDS-Practicas/Practica3/P3/tsb/cic_tsb_pkg.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica3/P3/tsb/cic_tsb_pkg.sv
+} {} {}} W:/MASTER_1/PDS-Practicas/Practica3/P3/src/cic_pc.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica3/P3/src/cic_pc.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling package cic_tsb_pkg
+-- Compiling module cic_pc
 
 Top level modules:
-	--none--
+	cic_pc
 
 } {} {}} W:/MASTER_1/PDS-Practicas/Practica3/P3/src/cic_expander.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica3/P3/src/cic_expander.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -28,11 +28,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	cic_expander
 
-} {} {}} W:/MASTER_1/PDS-Practicas/Practica3/P3/src/cic_pc.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica3/P3/src/cic_pc.sv
+} {} {}} W:/MASTER_1/PDS-Practicas/Practica3/P3/src/cic_int.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica3/P3/src/cic_int.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module cic_pc
+-- Compiling module cic_int
 
 Top level modules:
-	cic_pc
+	cic_int
 
 } {} {}}

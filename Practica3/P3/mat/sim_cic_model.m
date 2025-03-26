@@ -25,7 +25,7 @@ tsb_dir = '../tsb/';
 tsb_name = 'cic_tsb';
 
 %% TEST CASES:
-test_case = 2
+test_case = 3
 
 % List of test cases
 % 1 : Cosine signal fo = 5 kHz
@@ -168,9 +168,9 @@ if file_test_gen == 1
     pack_f=fopen(f,'w');
  
     for i=1:num_data_out-1
-       fprintf(pack_f,[num2bin(q_out,s_out(i)) '\n']);
+       fprintf(pack_f,[num2bin(q_out,s_out_quant(i)) '\n']);
     end
-    fprintf(pack_f,[num2bin(q_out,s_out(i+1))]);
+    fprintf(pack_f,[num2bin(q_out,s_out_quant(i+1))]);
 
     fclose(pack_f);
 

@@ -1,6 +1,6 @@
 package cic_tsb_pkg; 
  
-integer test_case = 2; // #case for test 
+integer test_case = 3; // #case for test 
  
 parameter Win = 18; 
 parameter Ncomb = 1; 
