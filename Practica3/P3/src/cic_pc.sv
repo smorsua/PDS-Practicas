@@ -34,7 +34,7 @@ assign id_data_expanded = $signed(id_data);
 cic_comb #(.W(Win + Ncomb * 3)) comb (
     .id_data(id_data_expanded),
     .ic_val_data(ic_val_data),
-    .clk(ic_val_data),
+    .clk(clk),
     .od_data(combs_od_data[0]),
     .oc_val_data(combs_od_val_data[0])
 );

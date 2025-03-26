@@ -7,8 +7,8 @@ module cic_comb #(parameter W = 21) (
 );
 
     logic val_data_r = 0;
-    logic [W-1:0] data_delay = 0;
     logic [W-1:0] od_data_r = 0;
+    logic [W-1:0] data_delay = 0;
 
     always_ff @(posedge clk) begin
         if(ic_val_data) begin
@@ -19,5 +19,6 @@ module cic_comb #(parameter W = 21) (
     end
 
     assign oc_val_data = val_data_r;
+    //assign oc_val_data = ic_val_data;
     assign od_data = od_data_r;
 endmodule
