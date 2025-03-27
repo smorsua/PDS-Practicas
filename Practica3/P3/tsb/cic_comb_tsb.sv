@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 import cic_tsb_pkg::*; // PACKAGE WITH PARAMETERS TO CONFIGURE THE TB
 
-module cic_tsb();
+module cic_comb_tsb();
 
 parameter fo = 5; // kHz
 parameter n_periods_to_display = 10;
@@ -13,10 +13,10 @@ logic rst_ac;
 logic clk;
 logic val_in;
 logic val_out;
-logic signed [Win-1:0] in_data;
-logic signed [Win+Ncomb*3+Ng-1:0] out_data; 
+logic signed [Win+Ncomb-1:0] in_data;
+logic signed [Win+Ncomb-1:0] out_data; 
 
-logic signed [Win+Ncomb*3+Ng-1:0] o_data_M, o_data_F; 
+logic signed [Win+Ncomb-1:0] o_data_M, o_data_F; 
 
 // contadores y control
 integer in_sample_cnt; // Contador de muestras de entrada
@@ -28,23 +28,31 @@ logic end_sim; // Indicación de simulación on/off
 
 // Gestion I/O texto
 integer data_in_file_val;
-logic signed [Win-1:0] data_in_file;
+logic signed [Win+Ncomb-1:0] data_in_file;
 integer scan_data_in;
 
 integer config_file_val;
 
 integer data_out_file_val;
-logic signed [Win+Ncomb*3+Ng-1:0] data_out_file;
+logic signed [Win+Ncomb-1:0] data_out_file;
 integer scan_data_out;
 
 // Reloj
 always #(PER/2) clk = !clk&end_sim; // Genera reloj
 
 // UUT
-cic_pc #(.Win(Win), .Ncomb(Ncomb), .Ng(Ng), .R(R)) UUT (
+// cic_pc #(.Win(Win), .Ncomb(Ncomb), .Ng(Ng), .R(R)) UUT (
+// 	.id_data(in_data),
+// 	.ic_val_data(val_in),
+// 	.ic_rst(rst_ac),
+// 	.clk(clk),
+// 	.od_data(out_data),
+// 	.oc_val_data(val_out)
+// );
+
+cic_comb #(.W(Win + Ncomb)) UUT (
 	.id_data(in_data),
 	.ic_val_data(val_in),
-	.ic_rst(rst_ac),
 	.clk(clk),
 	.od_data(out_data),
 	.oc_val_data(val_out)
@@ -54,21 +62,22 @@ initial	begin
 	$display("########################################### ");
 	$display("START TEST # ","%d", test_case);
 	$display("########################################### ");
-	data_in_file_val = $fopen("./iof/id_cic.txt", "r");
 
+	data_in_file_val = $fopen("./iof/id_cic_comb.txt", "r");
 	assert (data_in_file_val) else begin
-		$display("---> Error opening file id_cic.txt");
+		$display("---> Error opening file id_cic_comb.txt");
 		$stop;
 	end
 
-	data_out_file_val = $fopen("./iof/od_cic.txt", "r");
+	data_out_file_val = $fopen("./iof/od_cic_comb.txt", "r");
 	assert (data_out_file_val) else begin
-		$display("---> Error opening file od_cic.txt");
+		$display("---> Error opening file od_cic_comb.txt");
 		$stop;
 	end
 	
 	// config_file_val = $fopen("./iof/id_config_cic.txt", "r");
 
+	// TODO: si no causa problemas, eliminar tambien en cic_tsb
 	// $fscanf(config_file_val, "%d\n", Win);
 	// $fscanf(config_file_val, "%d\n", Ncomb);
 	// $fscanf(config_file_val, "%d\n", Ng);
@@ -103,9 +112,6 @@ always@(posedge clk)
 			in_sample_cnt <= in_sample_cnt + 1;
 			rst_ac  <= 1'b0;
 			val_in  <= 1'b1;
-			#(PER);
-			val_in  <= 1'b0;
-			#((R-1)*PER);
 		end	else begin
 			val_in <= 1'b0;
 			load_data = 1'b0;

@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 import cic_tsb_pkg::*; // PACKAGE WITH PARAMETERS TO CONFIGURE THE TB
 
-module cic_tsb();
+module cic_expander_tsb();
 
 parameter fo = 5; // kHz
 parameter n_periods_to_display = 10;
@@ -13,10 +13,10 @@ logic rst_ac;
 logic clk;
 logic val_in;
 logic val_out;
-logic signed [Win-1:0] in_data;
-logic signed [Win+Ncomb*3+Ng-1:0] out_data; 
+logic signed [Win + Ncomb * 3-1:0] in_data;
+logic signed [Win + Ncomb * 3-1:0] out_data; 
 
-logic signed [Win+Ncomb*3+Ng-1:0] o_data_M, o_data_F; 
+logic signed [Win + Ncomb * 3-1:0] o_data_M, o_data_F; 
 
 // contadores y control
 integer in_sample_cnt; // Contador de muestras de entrada
@@ -28,21 +28,20 @@ logic end_sim; // Indicación de simulación on/off
 
 // Gestion I/O texto
 integer data_in_file_val;
-logic signed [Win-1:0] data_in_file;
+logic signed [Win + Ncomb * 3-1:0] data_in_file;
 integer scan_data_in;
 
 integer config_file_val;
 
 integer data_out_file_val;
-logic signed [Win+Ncomb*3+Ng-1:0] data_out_file;
+logic signed [Win + Ncomb * 3-1:0] data_out_file;
 integer scan_data_out;
 
 // Reloj
 always #(PER/2) clk = !clk&end_sim; // Genera reloj
 
-// UUT
-cic_pc #(.Win(Win), .Ncomb(Ncomb), .Ng(Ng), .R(R)) UUT (
-	.id_data(in_data),
+cic_expander #(.W(Win + Ncomb * 3), .R(R)) expander (
+    .id_data(in_data),
 	.ic_val_data(val_in),
 	.ic_rst(rst_ac),
 	.clk(clk),
@@ -54,16 +53,16 @@ initial	begin
 	$display("########################################### ");
 	$display("START TEST # ","%d", test_case);
 	$display("########################################### ");
-	data_in_file_val = $fopen("./iof/id_cic.txt", "r");
+	data_in_file_val = $fopen("./iof/id_cic_expander.txt", "r");
 
 	assert (data_in_file_val) else begin
-		$display("---> Error opening file id_cic.txt");
+		$display("---> Error opening file id_cic_expander.txt");
 		$stop;
 	end
 
-	data_out_file_val = $fopen("./iof/od_cic.txt", "r");
+	data_out_file_val = $fopen("./iof/od_cic_expander.txt", "r");
 	assert (data_out_file_val) else begin
-		$display("---> Error opening file od_cic.txt");
+		$display("---> Error opening file od_cic_expander.txt");
 		$stop;
 	end
 	

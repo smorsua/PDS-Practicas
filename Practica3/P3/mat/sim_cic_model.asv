@@ -245,13 +245,13 @@ if file_test_gen == 1
     % Output data file 'od_cic_expander.txt'
     q_exp_out = quantizer([Wcomb Fcomb],'wrap','floor');
     f=sprintf([file_dir 'od_cic_expander.txt']);
-    num_data_in = length(int0_input);
+    num_data_in = length(int0_out);
     pack_f=fopen(f,'w');
  
     for i=1:num_data_in-1
-       fprintf(pack_f,[num2bin(q_exp_out,double(int0_input(i))) '\n']);
+       fprintf(pack_f,[num2bin(q_int_out,double(int0_out(i))) '\n']);
     end
-    fprintf(pack_f,[num2bin(q_exp_out,double(int0_input(i+1)))]);
+    fprintf(pack_f,[num2bin(q_int_out,double(int0_out(i+1)))]);
 
     fclose(pack_f);
 
