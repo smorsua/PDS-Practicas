@@ -14,9 +14,9 @@ logic clk;
 logic val_in;
 logic val_out;
 logic signed [Win-1:0] in_data;
-logic signed [Win+Ncomb*3+Ng-1:0] out_data; 
+logic signed [Wout-1:0] out_data; 
 
-logic signed [Win+Ncomb*3+Ng-1:0] o_data_M, o_data_F; 
+logic signed [Wout-1:0] o_data_M, o_data_F; 
 
 // contadores y control
 integer in_sample_cnt; // Contador de muestras de entrada
@@ -34,14 +34,14 @@ integer scan_data_in;
 integer config_file_val;
 
 integer data_out_file_val;
-logic signed [Win+Ncomb*3+Ng-1:0] data_out_file;
+logic signed [Wout-1:0] data_out_file;
 integer scan_data_out;
 
 // Reloj
 always #(PER/2) clk = !clk&end_sim; // Genera reloj
 
 // UUT
-cic_pc #(.Win(Win), .Ncomb(Ncomb), .Ng(Ng), .R(R)) UUT (
+cic #(.Win(Win), .Wout(Wout), .Ncomb(Ncomb), .Ng(Ng), .R(R), .K(32)) UUT (
 	.id_data(in_data),
 	.ic_val_data(val_in),
 	.ic_rst(rst_ac),

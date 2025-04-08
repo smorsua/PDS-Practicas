@@ -25,7 +25,7 @@ tsb_dir = '../tsb/';
 tsb_name = 'cic_tsb';
 
 %% TEST CASES:
-test_case = 2
+test_case = 1
 
 % List of test cases
 % 1 : Cosine signal fo = 5 kHz
@@ -81,8 +81,8 @@ Fint = Fexp; %% Frac integrators
 
 % k=XX; % Final Scale
 
-Wout = Wint; % W Output
-Fout = Fint; % Frac Output
+Wout = 16; % W Output
+Fout = 15; % Frac Output
 
 % ------------------Configuration END--------------------------------------
 
@@ -165,7 +165,7 @@ if file_test_gen == 1
     fclose(pack_f);
 
      % Output data file 'od_cic.txt'
-    q_out = quantizer([Wout Fout],'wrap','floor');
+    q_out = quantizer([Wout Fout],'saturate','floor');
     f=sprintf([file_dir 'od_cic.txt']);
     num_data_out = length(s_out);
     pack_f=fopen(f,'w');

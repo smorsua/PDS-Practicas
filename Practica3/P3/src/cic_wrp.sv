@@ -9,7 +9,13 @@ output oc_val_data
 );
 
 /* DECLARACIONES ------------------------- */
-
+logic signed [17:0] id_data_r;
+logic val_in_r;
+logic ic_rst_r;
+logic clk_r;
+logic signed [15:0] od_data_r;
+logic signed [15:0] od_data_s;
+logic val_out_s, val_out_r;
 
 /* selección de I/O----------------------- */
 // Seleccion de registros de I/O: 0-->no, 1-->si 
@@ -19,26 +25,36 @@ parameter reg_io = 0;
 generate if (reg_io == 0)
 	always_comb 	
 		begin
-			
-
-
-
+			id_data_r      <= id_data;
+            val_in_r       <= ic_val_data;
+			ic_rst_r       <= ic_rst;
+            od_data_r      <= od_data_s;
+            val_out_r      <= val_out_s;
 		end
 else
 	always_ff@(posedge clk) 	
 		begin
-			
-
-
+			id_data_r      <= id_data;
+            val_in_r       <= ic_val_data;
+			ic_rst_r       <= ic_rst;
+            od_data_r      <= od_data_s;
+            val_out_r      <= val_out_s;			
 		end
 endgenerate
 
 /* INSTANCIAR EL MODULO ------------------------- */
 
-
+cic #(.Win(18),.Ncomb(1),.Ng(27),.Wout(16),.R(2000),.K(2)) CIC1
+		(.id_data(id_data_r),	
+		.ic_val_data(val_in_r),
+		.ic_rst(ic_rst_r),	
+		.clk(clk),
+		.od_data(od_data_s),  
+		.oc_val_data(val_out_s)
+		);
 
 /* ASIGNACION SALIDAS ------------------------- */
-assign od_data = ;
-assign oc_val_data = ;
+assign od_data = od_data_r;
+assign oc_val_data = val_out_r;
 
 endmodule

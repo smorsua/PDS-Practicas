@@ -40,7 +40,8 @@ cic_comb #(.W(Win + Ncomb * 3)) comb (
 );
 
 generate
-    for(genvar i = 1; i < 3; i++) begin
+genvar i;
+    for(i = 1; i < 3; i++) begin : gen_comb
         cic_comb #(.W(Win + Ncomb * 3)) comb (
             .id_data(combs_od_data[i-1]),
             .ic_val_data(combs_od_val_data[i-1]),
@@ -81,13 +82,14 @@ cic_int #(.W(Win + Ncomb * 3 + Ng)) my_cic_int (
 );
 
 generate
-    for(genvar i = 1; i < 3; i++) begin
+genvar j;
+    for(j = 1; j < 3; j++) begin : gen_int
         cic_int #(.W(Win + Ncomb * 3 + Ng)) my_cic_int (
-            .id_data(int_od_data[i-1]),
-            .ic_val_data(int_od_val_data[i-1]),
+            .id_data(int_od_data[j-1]),
+            .ic_val_data(int_od_val_data[j-1]),
             .clk(clk),
-            .od_data(int_od_data[i]),
-            .oc_val_data(int_od_val_data[i])
+            .od_data(int_od_data[j]),
+            .oc_val_data(int_od_val_data[j])
         );
     end
 endgenerate
