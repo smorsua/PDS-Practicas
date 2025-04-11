@@ -9,7 +9,7 @@ module comp_cic_control #(parameter Num_coef = 17) (
     output [$clog2(Num_coef)-1:0] oc_addr //
 );
 
-enum logic [1:0] {IDLE, START_COUNTER, WAIT, DONE} state;
+enum logic [2:0] {IDLE, START_COUNTER, WAIT, FINISH_COUNTER, DONE} state;
 
 logic [$clog2(Num_coef)-1:0] counter = 0;
 
@@ -28,6 +28,12 @@ always_comb begin
         oc_val_data = 0;
     end
     WAIT: begin
+        oc_en_acc = 1;
+        oc_rst_acc = 0;
+        oc_en_reg = 0;
+        oc_val_data = 0;
+    end
+    FINISH_COUNTER: begin
         oc_en_acc = 1;
         oc_rst_acc = 0;
         oc_en_reg = 0;
@@ -63,11 +69,12 @@ always_ff @(posedge clk) begin
         START_COUNTER: state <= WAIT; 
         WAIT: begin
             if(counter == Num_coef - 1) begin
-                state <= DONE;
+                state <= FINISH_COUNTER;
             end else begin
                 state <= WAIT;
             end
         end
+        FINISH_COUNTER: state <= DONE;
         DONE: state <= IDLE;
         default: state <= IDLE;
         endcase
@@ -79,11 +86,11 @@ always_ff @(posedge clk) begin
     if(ic_rst) begin
         counter <= 0;
     end else begin
-        if(state == START_COUNTER) begin
+        if(state == IDLE) begin
             counter <= 0;
         end
 
-        if(state == WAIT) begin
+        if(state == START_COUNTER || state == WAIT) begin
             if(counter < Num_coef - 1) begin
                 counter <= counter + 1;
             end

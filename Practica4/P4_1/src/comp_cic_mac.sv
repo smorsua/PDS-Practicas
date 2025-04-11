@@ -1,7 +1,6 @@
 module comp_cic_mac #(
     parameter Win = 16, 
-    parameter Wcoef = 17, 
-    parameter Wmultin = 18, 
+    parameter Wcoef = 18, 
     parameter Wmultout = 34, 
     parameter Waccum = 34) (
     input signed [Win-1:0] ic_reg_desp,
@@ -11,14 +10,12 @@ module comp_cic_mac #(
     input ic_rst_acc,
     output signed [Waccum-1:0] od_out
 );
-    logic signed [Wmultin-1:0] extended_reg_desp_s;
-    logic signed [Wmultin-1:0] extended_rom_coef_s;
+    // logic signed [Wmultin-1:0] extended_reg_desp_s;
+    // logic signed [Wmultin-1:0] extended_rom_coef_s;
     logic signed [Wmultout-1:0] mult_res_s;
     logic signed [Waccum-1:0] accum_r = 0;
 
-    assign extended_reg_desp_s = ic_reg_desp;
-    assign extended_rom_coef_s = ic_rom_coef;
-    assign mult_res_s = extended_reg_desp_s * extended_rom_coef_s;
+    assign mult_res_s = ic_reg_desp * ic_rom_coef;
 
     always_ff @(posedge clk) begin
         if(ic_rst_acc) begin

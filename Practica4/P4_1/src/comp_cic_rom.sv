@@ -19,7 +19,7 @@ initial begin
     for(int i = 0; i < 2**ADDR_WIDTH; i++) begin
         rom[i] = 0;
     end
-    $readmemb("W:/MASTER_1/PDS-Practicas/Practica4/P4_1/sim/iof/rom_coefs_comp_cic.txt", rom);
+    $readmemb("../sim/iof/rom_coefs_comp_cic.txt", rom);
 end
 				
 				

@@ -32,8 +32,6 @@ integer data_in_file_val;
 logic signed [Win-1:0] data_in_file;
 integer scan_data_in;
 
-integer config_file_val;
-
 integer data_out_file_val;
 logic signed [Wout-1:0] data_out_file;
 integer scan_data_out;
@@ -42,7 +40,7 @@ integer scan_data_out;
 always #(PER/2) clk = !clk&end_sim; // Genera reloj
 
 // UUT
-comp_cic #(.Win(Win), .Wcoef(Wcoef), .Wout(Wout), .Ng(Ng), .Num_coef(Num_coef)) UUT (
+comp_cic #(.Win(Win), .Wcoef(Wcoef), .Wout(Wout), .Num_coef(Num_coef)) UUT (
 	.id_data_filter(in_data),
 	.ic_val_data(val_in),
 	.ic_rst(rst_ac),

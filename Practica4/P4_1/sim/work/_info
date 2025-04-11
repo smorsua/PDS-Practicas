@@ -7,196 +7,220 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/intelFPGA/17.1
+dW:/P4/P4_2/PDS-Practicas/Practica4/P4_1/sim
 vcomp_cic
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1743790027
+!s110 1744356750
 !i10b 1
-!s100 4KKX=UV>21c9L`[][1U__3
-I9lRzbii2BD;]Nf7;5h[>d3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s100 [2JjhjO5^OTY_T71<1J_E0
+I4Ig4X9fZcn6>bjddIMTgN3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
 !s105 comp_cic_sv_unit
 S1
-Z3 dW:/MASTER_1/PDS-Practicas/Practica4/P4_1/sim
-w1743786235
+Z2 dW:/MASTER_1/PDS-Practicas/Practica4/P4_1/sim
+w1744307490
 8W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic.sv
 FW:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic.sv
 L0 1
-Z4 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1743790027.000000
+!s108 1744356749.000000
 !s107 W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic.sv|
 !i113 1
-Z6 o-work work -sv
-Z7 tCvgOpt 0
+Z4 o-work work -sv
+Z5 tCvgOpt 0
 vcomp_cic_control
 R0
-Z8 !s110 1743790135
+!s110 1744356694
 !i10b 1
-!s100 Wo=GzAYk8OglH5a:WLMX11
-I4e6cS@RLMlV91MJ>;hUbH0
-R2
+!s100 e6<FB>]<S4::597;@WGKH0
+I1QkzkoJP[JI]b_8CHo=D=3
+R1
 !s105 comp_cic_control_sv_unit
 S1
-R3
-w1743790016
+R2
+w1744306358
 8W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_control.sv
 FW:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_control.sv
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-Z9 !s108 1743790135.000000
+!s108 1744356690.000000
 !s107 W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_control.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_control.sv|
 !i113 1
-R6
-R7
+R4
+R5
 vcomp_cic_mac
 R0
-R8
+!s110 1744356733
 !i10b 1
-!s100 Z09Ka^AJ4fB75;Wf4Vkgl0
-ICXM?Qlk=PH_LUQiG?A@Z00
-R2
+!s100 WM0djRf`5TF7^H@UF?;_^2
+IMIc3HX9;6:S;fTmWejIzd2
+R1
 !s105 comp_cic_mac_sv_unit
 S1
-R3
-w1743785943
+R2
+w1744306577
 8W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_mac.sv
 FW:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_mac.sv
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R9
+!s108 1744356730.000000
 !s107 W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_mac.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_mac.sv|
 !i113 1
-R6
-R7
+R4
+R5
+vcomp_cic_pc
+R0
+!s110 1744356748
+!i10b 1
+!s100 d9BI?8F3MWLIH4`fNeO=D0
+IIa<QbFHZVGP1<0RQX6;WT3
+R1
+!s105 comp_cic_pc_sv_unit
+S1
+R2
+w1744307389
+8W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_pc.sv
+FW:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_pc.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1744356746.000000
+!s107 W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_pc.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_pc.sv|
+!i113 1
+R4
+R5
 vcomp_cic_reg_desp
 R0
-R1
+!s110 1744356735
 !i10b 1
 !s100 R[6[z28^8a5WV5I>:8SoZ3
 IDVOczXHBjf]QfzOKb=`PY1
-R2
+R1
 !s105 comp_cic_reg_desp_sv_unit
 S1
-R3
-w1743785531
+R2
+w1744294603
 8W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_reg_desp.sv
 FW:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_reg_desp.sv
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+!s108 1744356734.000000
 !s107 W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_reg_desp.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_reg_desp.sv|
 !i113 1
-R6
-R7
+R4
+R5
 vcomp_cic_rom
 R0
-R1
+!s110 1744356744
 !i10b 1
-!s100 f20YXKB4MN01;A<cHo3]a3
-IAAMl:TUe5Jz@XJCS_ObaS1
-R2
+!s100 GaU6WoDOVNGAQ:k>UdTB`3
+I9SKDUT9`JZ>eocF14<YR]3
+R1
 !s105 comp_cic_rom_sv_unit
 S1
-R3
-w1743189236
+R2
+w1744294604
 8W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_rom.sv
 FW:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_rom.sv
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+!s108 1744356741.000000
 !s107 W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_rom.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica4/P4_1/src/comp_cic_rom.sv|
 !i113 1
-R6
-R7
+R4
+R5
 vcomp_cic_tsb
 R0
-Z10 DXx4 work 16 comp_cic_tsb_pkg 0 22 SKdZdTOJ@Sz`hGHcEG^ZM0
-DXx4 work 20 comp_cic_tsb_sv_unit 0 22 hdZ<Gd=PST>o5UIzgfMi00
-R2
+Z6 DXx4 work 16 comp_cic_tsb_pkg 0 22 ><`8Zbe>fg1ccF[AUba_M2
+DXx4 work 20 comp_cic_tsb_sv_unit 0 22 3]O4Kg=D6nRT590U9:V^W1
+R1
 r1
 !s85 0
 31
 !i10b 1
-!s100 PioHfX<ZiN2hQJ??[KBeU0
-I_b8PczIP_2BmXckb6i[]m3
+!s100 z2kLec0GeFM@FVhD]mm_Y0
+I1<X@HImmlEUeo_XJhMQ4i2
 !s105 comp_cic_tsb_sv_unit
 S1
-R3
-Z11 w1743189643
-Z12 8W:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb.sv
-Z13 FW:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb.sv
+R2
+Z7 w1744307274
+Z8 8W:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb.sv
+Z9 FW:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb.sv
 L0 4
-R4
-Z14 !s108 1743790028.000000
-Z15 !s107 W:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb.sv|
-Z16 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb.sv|
+R3
+Z10 !s108 1744356755.000000
+Z11 !s107 W:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb.sv|
+Z12 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb.sv|
 !i113 1
-R6
-R7
+R4
+R5
 Xcomp_cic_tsb_pkg
 R0
-!s110 1743790028
+!s110 1744356753
 !i10b 1
-!s100 ]8dOA9TnB62=`BHkRa^n?0
-ISKdZdTOJ@Sz`hGHcEG^ZM0
-VSKdZdTOJ@Sz`hGHcEG^ZM0
+!s100 WkVic1H2ZGkUflaKLoYfn3
+I><`8Zbe>fg1ccF[AUba_M2
+V><`8Zbe>fg1ccF[AUba_M2
 S1
-R3
-w1743786475
+R2
+w1744356670
 8W:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb_pkg.sv
 FW:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb_pkg.sv
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+!s108 1744356752.000000
 !s107 W:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb_pkg.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|W:/MASTER_1/PDS-Practicas/Practica4/P4_1/tsb/comp_cic_tsb_pkg.sv|
 !i113 1
-R6
-R7
+R4
+R5
 Xcomp_cic_tsb_sv_unit
 R0
-R10
-VhdZ<Gd=PST>o5UIzgfMi00
+R6
+V3]O4Kg=D6nRT590U9:V^W1
 r1
 !s85 0
 31
 !i10b 1
-!s100 d_64i0=XMbYOc=cg371<A2
-IhdZ<Gd=PST>o5UIzgfMi00
+!s100 k2^I22[8LY0P05FhFe58Z0
+I3]O4Kg=D6nRT590U9:V^W1
 !i103 1
 S1
+R2
+R7
+R8
+R9
+L0 2
 R3
+R10
 R11
 R12
-R13
-L0 2
-R4
-R14
-R15
-R16
 !i113 1
-R6
-R7
+R4
+R5

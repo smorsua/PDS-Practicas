@@ -12,7 +12,7 @@ name_slx_model = 'comp_cic_model';
 tsb_name = 'comp_cic_tsb';
 
 % Choose full precision
-full_precision = 1 % :1 Full precision 
+full_precision = 0 % :1 Full precision 
 
 % Generation of test files
 file_test_gen = 1; %1-> yes; 0->no
@@ -27,7 +27,7 @@ tsb_dir = '../tsb/';
 
 
 %% TEST CASES:
-test_case = 2
+test_case = 3
 
 % List of test cases
 % 1 : Square signal fo=5 kHz
@@ -90,6 +90,7 @@ end
 
 h_comp_cic=remez(order_comp_filter,2*[f1 0.5],[1./resp 1/resp(end)]);
 h_comp_cic = round(h_comp_cic*2^16)*2^-16; %% Coeficientes comp cic cuantificados
+
 [h,Wf]=freqz(h_comp_cic,1,1e5);
 
 
@@ -114,6 +115,7 @@ else
     Wout = 18;
     Fout = 15;
 end
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Simulink
 sim([ name_slx_model '.slx']) % Launch Simulink model
