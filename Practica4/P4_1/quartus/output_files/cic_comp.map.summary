@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Apr 11 09:57:14 2025
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Revision Name : cic_comp
+Top-level Entity Name : comp_cic_wrp
+Family : Cyclone IV E
+Total logic elements : 588
+    Total combinational functions : 260
+    Dedicated logic registers : 403
+Total registers : 403
+Total pins : 38
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 2
+Total PLLs : 0

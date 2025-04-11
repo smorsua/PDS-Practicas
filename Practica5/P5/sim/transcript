@@ -1,0 +1,483 @@
+# Compile of bcom_conf_fsms_main.sv failed with 19 errors.
+# Compile of bcom_conf_fsms_wr.sv failed with 18 errors.
+# Compile of bcom_conf_fsms_rd.sv failed with 19 errors.
+# Compile of bcom_conf_fsms.sv was successful.
+# Compile of bcom_conf_regs.sv was successful.
+# Compile of bcom_conf.sv was successful.
+# Compile of bcom_conf_tsb.sv was successful.
+# 7 compiles, 3 failed with 56 errors.
+# Compile of bcom_conf_fsms_main.sv failed with 2 errors.
+# Compile of bcom_conf_fsms_wr.sv was successful.
+# Compile of bcom_conf_fsms_rd.sv was successful.
+# Compile of bcom_conf_fsms.sv was successful.
+# Compile of bcom_conf_regs.sv was successful.
+# Compile of bcom_conf.sv was successful.
+# Compile of bcom_conf_tsb.sv was successful.
+# 7 compiles, 1 failed with 2 errors.
+# Compile of bcom_conf_fsms_main.sv was successful.
+# Compile of bcom_conf_fsms_wr.sv was successful.
+# Compile of bcom_conf_fsms_rd.sv was successful.
+# Compile of bcom_conf_fsms.sv was successful.
+# Compile of bcom_conf_regs.sv was successful.
+# Compile of bcom_conf.sv was successful.
+# Compile of bcom_conf_tsb.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.bcom_conf_tsb
+# vsim work.bcom_conf_tsb 
+# Start time: 19:01:33 on Apr 11,2025
+# Loading sv_std.std
+# Loading work.bcom_conf_tsb
+# Loading work.bcom_conf
+# Loading work.bcom_conf_regs
+# Loading work.bcom_conf_fsms
+# Loading work.bcom_conf_fsms_main
+# Loading work.bcom_conf_fsms_wr
+# Loading work.bcom_conf_fsms_rd
+add wave -position end sim:/bcom_conf_tsb/*
+run -all
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 125 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 255 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 385 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 515 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 645 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 775 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 905 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 1035 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 1165 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 1295 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  xxxxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  xxxxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  xxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  xxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 70
+# ** Error:   WRONG Reg control config.  xx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 74
+# ** Note: $stop    : W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /bcom_conf_tsb
+# Break in Module bcom_conf_tsb at W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv line 75
+add wave -position end sim:/bcom_conf_tsb/UUT/C2/*
+add wave -position end sim:/bcom_conf_tsb/UUT/C3/*
+add wave -position end sim:/bcom_conf_tsb/UUT/C3/C1/*
+add wave -position end sim:/bcom_conf_tsb/UUT/C3/C2/*
+add wave -position end sim:/bcom_conf_tsb/UUT/C3/C3/*
+restart
+run -all
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 125 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 255 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 385 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 515 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 645 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 775 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 905 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 1035 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 1165 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 1295 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  xxxxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  xxxxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  xxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  xxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 70
+# ** Error:   WRONG Reg control config.  xx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 74
+# ** Note: $stop    : W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /bcom_conf_tsb
+# Break in Module bcom_conf_tsb at W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv line 75
+add wave -position end sim:/bcom_conf_tsb/UUT/C2/*
+restart
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 125 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 255 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 385 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 515 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 645 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 775 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 905 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 1035 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 1165 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 1295 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  xxxxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  xxxxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  xxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  xxxx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 70
+# ** Error:   WRONG Reg control config.  xx
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 74
+# ** Note: $stop    : W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /bcom_conf_tsb
+# Break in Module bcom_conf_tsb at W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv line 75
+# Compile of bcom_conf_fsms_main.sv was successful.
+# Compile of bcom_conf_fsms_wr.sv was successful.
+# Compile of bcom_conf_fsms_rd.sv was successful.
+# Compile of bcom_conf_fsms.sv was successful.
+# Compile of bcom_conf_regs.sv was successful.
+# Compile of bcom_conf.sv was successful.
+# Compile of bcom_conf_tsb.sv was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.bcom_conf_tsb
+# Loading work.bcom_conf
+# Loading work.bcom_conf_regs
+# Loading work.bcom_conf_fsms
+# Loading work.bcom_conf_fsms_main
+# Loading work.bcom_conf_fsms_wr
+# Loading work.bcom_conf_fsms_rd
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 125 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 255 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 385 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 515 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 645 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 775 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 905 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 1035 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 1165 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 1295 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  000000
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  000000
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0000
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0000
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 70
+# ** Error:   WRONG Reg control config.  00
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 74
+# ** Note: $stop    : W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /bcom_conf_tsb
+# Break in Module bcom_conf_tsb at W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv line 75
+add wave -position end sim:/bcom_conf_tsb/UUT/C3/C2/*
+restart
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 125 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 255 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 385 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 515 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 645 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 775 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 905 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 1035 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 1165 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 1295 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  000000
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  000000
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0000
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0000
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 70
+# ** Error:   WRONG Reg control config.  00
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 74
+# ** Note: $stop    : W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /bcom_conf_tsb
+# Break in Module bcom_conf_tsb at W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv line 75
+add wave -position end sim:/bcom_conf_tsb/UUT/C3/C1/*
+# Compile of bcom_conf_fsms_main.sv was successful.
+# Compile of bcom_conf_fsms_wr.sv was successful.
+# Compile of bcom_conf_fsms_rd.sv was successful.
+# Compile of bcom_conf_fsms.sv was successful.
+# Compile of bcom_conf_regs.sv was successful.
+# Compile of bcom_conf.sv was successful.
+# Compile of bcom_conf_tsb.sv was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.bcom_conf_tsb
+# Loading work.bcom_conf
+# Loading work.bcom_conf_regs
+# Loading work.bcom_conf_fsms
+# Loading work.bcom_conf_fsms_main
+# Loading work.bcom_conf_fsms_wr
+# Loading work.bcom_conf_fsms_rd
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 3565 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3825 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3955 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4085 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4215 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4345 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4475 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4605 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4735 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  020100
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  050403
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0706
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0908
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 70
+# ** Error:   WRONG Reg control config.  0a
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 74
+# ** Note: $stop    : W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /bcom_conf_tsb
+# Break in Module bcom_conf_tsb at W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv line 75
+add wave -position end sim:/bcom_conf_tsb/UUT/C3/C2/*
+add wave -position end sim:/bcom_conf_tsb/UUT/C2/*
+# Compile of bcom_conf_fsms_main.sv was successful.
+# Compile of bcom_conf_fsms_wr.sv was successful.
+# Compile of bcom_conf_fsms_rd.sv was successful.
+# Compile of bcom_conf_fsms.sv was successful.
+# Compile of bcom_conf_regs.sv was successful.
+# Compile of bcom_conf.sv was successful.
+# Compile of bcom_conf_tsb.sv was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.bcom_conf_tsb
+# Loading work.bcom_conf
+# Loading work.bcom_conf_regs
+# Loading work.bcom_conf_fsms
+# Loading work.bcom_conf_fsms_main
+# Loading work.bcom_conf_fsms_wr
+# Loading work.bcom_conf_fsms_rd
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+#  OK: txena is activated properly
+# ** Error:  TX data should be   1
+#    Time: 3565 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   2
+#    Time: 3695 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   3
+#    Time: 3825 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   4
+#    Time: 3955 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   5
+#    Time: 4085 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   6
+#    Time: 4215 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   7
+#    Time: 4345 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   8
+#    Time: 4475 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be   9
+#    Time: 4605 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  OK: txena is activated properly
+# ** Error:  TX data should be  10
+#    Time: 4735 ps  Scope: bcom_conf_tsb.Assert_tx File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 105
+#  CHECK CONFIGURATION REGISTER ====================
+# ** Error:   WRONG Reg frec_mod config.  020100
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 58
+# ** Error:   WRONG Reg frec_por config.  050403
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 62
+# ** Error:   WRONG Reg im_am config.  0706
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 66
+# ** Error:   WRONG Reg im_fm config.  0908
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 70
+# ** Error:   WRONG Reg control config.  0a
+#    Time: 6016 ps  Scope: bcom_conf_tsb File: W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv Line: 74
+# ** Note: $stop    : W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /bcom_conf_tsb
+# Break in Module bcom_conf_tsb at W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv line 75
+add wave -position end sim:/bcom_conf_tsb/UUT/C2/*
+add wave -position end sim:/bcom_conf_tsb/UUT/C3/C3/*
+add wave -position end  sim:/bcom_conf_tsb/UUT/C2/tx_shift_reg
+add wave -position end sim:/bcom_conf_tsb/UUT/C3/C2/*
+add wave -position end  sim:/bcom_conf_tsb/UUT/C3/C1/id_rxdw
+# Compile of bcom_conf_fsms_main.sv was successful.
+# Compile of bcom_conf_fsms_wr.sv was successful.
+# Compile of bcom_conf_fsms_rd.sv was successful.
+# Compile of bcom_conf_fsms.sv was successful.
+# Compile of bcom_conf_regs.sv was successful.
+# Compile of bcom_conf.sv was successful.
+# Compile of bcom_conf_tsb.sv was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.bcom_conf_tsb
+# Loading work.bcom_conf
+# Loading work.bcom_conf_regs
+# Loading work.bcom_conf_fsms
+# Loading work.bcom_conf_fsms_main
+# Loading work.bcom_conf_fsms_wr
+# Loading work.bcom_conf_fsms_rd
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+#  OK: txena is activated properly
+#  Data   1 transmitted OK
+#  OK: txena is activated properly
+#  Data   2 transmitted OK
+#  OK: txena is activated properly
+#  Data   3 transmitted OK
+#  OK: txena is activated properly
+#  Data   4 transmitted OK
+#  OK: txena is activated properly
+#  Data   5 transmitted OK
+#  OK: txena is activated properly
+#  Data   6 transmitted OK
+#  OK: txena is activated properly
+#  Data   7 transmitted OK
+#  OK: txena is activated properly
+#  Data   8 transmitted OK
+#  OK: txena is activated properly
+#  Data   9 transmitted OK
+#  OK: txena is activated properly
+#  Data  10 transmitted OK
+#  OK: txena is activated properly
+#  Data  11 transmitted OK
+#  CHECK CONFIGURATION REGISTER ====================
+#  Reg frec_mod configured OK
+#  Reg frec_por configured OK
+#  Reg im_am configured OK
+#  Reg im_fm configured OK
+#  Reg r_control configured OK
+# ** Note: $stop    : W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv(75)
+#    Time: 6016 ps  Iteration: 0  Instance: /bcom_conf_tsb
+# Break in Module bcom_conf_tsb at W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv line 75

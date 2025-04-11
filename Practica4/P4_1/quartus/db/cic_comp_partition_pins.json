@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "od_data_filter[0]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[1]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[2]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[3]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[4]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[5]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[6]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[7]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[8]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[9]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[10]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[11]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[12]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[13]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[14]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[15]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[16]",
+					"strict" : false
+				},
+				{
+					"name" : "od_data_filter[17]",
+					"strict" : false
+				},
+				{
+					"name" : "oc_val_data",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "ic_rst",
+					"strict" : false
+				},
+				{
+					"name" : "ic_val_data",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[0]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[1]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[2]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[3]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[4]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[5]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[6]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[7]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[8]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[9]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[10]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[11]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[12]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[13]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[14]",
+					"strict" : false
+				},
+				{
+					"name" : "id_data_filter[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

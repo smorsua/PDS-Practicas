@@ -17,7 +17,7 @@ logic signed [17:0] od_data_filter_s;  // S[18 15]
 logic oc_val_data_s; 
 
 // Seleccion de registros de I/O: 0-->no, 1-->si 
-parameter reg_io = 0;
+parameter reg_io = 1;
 
 // No registra I/O
 generate if (reg_io == 0)

@@ -1,0 +1,24 @@
+
+State Machine - |top_test_bcom_DE2_115|bcom:INST1|bcom_conf:C2|bcom_conf_fsms:C3|bcom_conf_fsms_rd:C3|state
+Name state.SEND_DATA state.WAIT_BUSY state.START_RD state.IDLE state.END_RD 
+state.IDLE 0 0 0 0 0 
+state.START_RD 0 0 1 1 0 
+state.WAIT_BUSY 0 1 0 1 0 
+state.SEND_DATA 1 0 0 1 0 
+state.END_RD 0 0 0 1 1 
+
+State Machine - |top_test_bcom_DE2_115|bcom:INST1|bcom_conf:C2|bcom_conf_fsms:C3|bcom_conf_fsms_wr:C2|state
+Name state.RECEIVED_DATA state.WAITING_DATA state.START_WR state.IDLE state.END_WR 
+state.IDLE 0 0 0 0 0 
+state.START_WR 0 0 1 1 0 
+state.WAITING_DATA 0 1 0 1 0 
+state.RECEIVED_DATA 1 0 0 1 0 
+state.END_WR 0 0 0 1 1 
+
+State Machine - |top_test_bcom_DE2_115|bcom:INST1|bcom_conf:C2|bcom_conf_fsms:C3|bcom_conf_fsms_main:C1|state
+Name state.START_RD state.WAIT_WR state.START_WR state.IDLE state.WAIT_RD 
+state.IDLE 0 0 0 0 0 
+state.START_WR 0 0 1 1 0 
+state.WAIT_WR 0 1 0 1 0 
+state.START_RD 1 0 0 1 0 
+state.WAIT_RD 0 0 0 1 1 

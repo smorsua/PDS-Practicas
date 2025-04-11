@@ -27,7 +27,7 @@ tsb_dir = '../tsb/';
 
 
 %% TEST CASES:
-test_case = 3
+test_case = 2
 
 % List of test cases
 % 1 : Square signal fo=5 kHz

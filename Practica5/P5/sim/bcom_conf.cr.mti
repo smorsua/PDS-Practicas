@@ -1,0 +1,36 @@
+../tsb/bcom_conf_tsb.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica5/P5/tsb/bcom_conf_tsb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bcom_conf_tsb
+
+Top level modules:
+	bcom_conf_tsb
+
+} {} {}} ../src/bcom_conf_regs.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica5/P5/src/bcom_conf_regs.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bcom_conf_regs
+
+Top level modules:
+	bcom_conf_regs
+
+} {} {}} ../src/bcom_conf_fsms_main.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica5/P5/src/bcom_conf_fsms_main.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bcom_conf_fsms_main
+
+Top level modules:
+	bcom_conf_fsms_main
+
+} {} {}} ../src/bcom_conf.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica5/P5/src/bcom_conf.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bcom_conf
+
+Top level modules:
+	bcom_conf
+
+} {} {}} ../src/bcom_conf_fsms.sv {1 {vlog -work work -sv -stats=none W:/MASTER_1/PDS-Practicas/Practica5/P5/src/bcom_conf_fsms.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bcom_conf_fsms
+
+Top level modules:
+	bcom_conf_fsms
+
+} {} {}}

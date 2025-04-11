@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Apr 11 19:21:45 2025
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Revision Name : test_bcom_DE2_115
+Top-level Entity Name : top_test_bcom_DE2_115
+Family : Cyclone IV E
+Total logic elements : 435
+    Total combinational functions : 252
+    Dedicated logic registers : 337
+Total registers : 337
+Total pins : 33
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
